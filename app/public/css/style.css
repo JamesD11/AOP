@@ -1,0 +1,10 @@
+body{
+  background-color: #333849;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+h1{
+  color: #FFFFFF;
+}

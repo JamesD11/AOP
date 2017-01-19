@@ -17,20 +17,9 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 //Routes
 //-------------------------------------
-app.get('/', function(req,res){
-  //res.send("Working");
-	res.sendFile(path.join(__dirname + '/index.html'));
-});
 
-app.get('/constitution', function(req,res){
-  //res.send("Working");
-	res.sendFile(path.join(__dirname + '/constitution.html'));
-});
+require('./app/routes/html-routes.js')(app);
 
-app.get('/rulechange', function(req,res){
-  //res.send("Working");
-	res.sendFile(path.join(__dirname + '/rulechange.html'));
-});
 
 
 
